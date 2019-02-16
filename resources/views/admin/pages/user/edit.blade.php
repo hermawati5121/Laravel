@@ -53,7 +53,7 @@
 						<input type="password" name="password"
 						class="form-control {{ $errors->has('password')?'is-invalid':'' }}"
 						id="iPassword" placeholder="Password">
-						<label for="Password">Password</label>
+						<label for="iPassword">Password</label>
 						@if($errors->has('password'))
 						<div class="invalid-feedback">{{ $errors->first('password') }}</div>
 						@endif
