@@ -13,6 +13,11 @@
             <span>User</span>
           </a>
         </li>
+        @endif
+
+        @if(Auth::user()->akses == 'admin' || Auth::user()->akses == 'asisten')
+
+
 
         <li class="nav-item">
           <a class="nav-link" href="{{route('admin.kategori')}}">
@@ -20,6 +25,7 @@
             <span>Kategori</span>
           </a>
         </li>
+        
 
         <li class="nav-item">
           <a class="nav-link" href="{{route('admin.produk')}}">
